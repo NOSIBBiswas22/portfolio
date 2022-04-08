@@ -320,6 +320,9 @@ img {
 .portfolio__img img {
   border-radius: 0.5rem;
 }
+/* .portfolio__img img:hover{
+  transform: scale(1.1);
+} */
 .portfolio__link {
   position: absolute;
   bottom: -100%;
@@ -342,6 +345,10 @@ img {
 }
 
 /* ===== CONTACT =====*/
+/* .contact__section {
+  padding-top: 3rem;
+  padding-bottom: .5rem;
+} */
 .contact__container {
   row-gap: 2rem;
 }
@@ -349,12 +356,17 @@ img {
   font-size: var(--normal-font-size);
   color: var(--first-color);
 }
+.contact__name {
+  display: inline-block;
+  margin-bottom: var(--mb-2);
+}
 .contact__text {
   display: inline-block;
   margin-bottom: var(--mb-2);
 }
 .contact__text:hover{
   color: #5361ff;
+  text-decoration: underline;
 }
 .contact__text a:hover{
   color: #5361ff;
@@ -369,11 +381,12 @@ img {
   padding: 0.8rem;
   outline: none;
   border: 1.5px solid var(--dark-color);
+  font: var(--body-font);
   font-size: var(--normal-font-size);
   margin-bottom: var(--mb-2);
   border-radius: 0.5rem;
 }
-#contact__massage{
+#contact__message{
   resize: none;
   height: 15rem;
   font: var(--body-font);
@@ -421,11 +434,10 @@ img {
   margin-bottom: 18px;
   color: var(--first-color);
 }
-.icons .contact__text iframe{
-  width: 315px;
+.icons iframe{
+  width: 320px;
   height: 200px;
-  border: 2px #2a3b47;
-  margin-bottom: 0rem;
+  /* margin-bottom: -16px; */
 }
 /* ===== FOOTER=====*/
 .footer {
@@ -525,11 +537,11 @@ img {
     padding: 4rem 0;
   }
   .about__img {
-    width: 200px;
-    height: 200px;
+    width: 255px;
+    height: 255px;
   }
   .about__img img {
-    width: 165px;
+    width: 210px;
   }
   .skills__container {
     grid-template-columns: repeat(2, 1fr);
@@ -542,7 +554,7 @@ img {
     column-gap: 2rem;
   }
   .icons .contact__text iframe{
-    width: 390px;
+    width: 395px;
     height: 200px;
     border: 2px #2a3b47;
     margin-bottom: 0rem;
