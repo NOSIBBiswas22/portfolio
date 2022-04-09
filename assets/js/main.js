@@ -103,6 +103,17 @@ function toggle__about__Btn() {
       moreText.style.display = "inline";
     }
   }
+// contact form save to googel sheets
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzSegIs36pW0dWnETu0qRJZw59VljRS5gAaUXWgH_oyqpNbeam20csz6y9K4ebdlBgqug/exec'
+const form = document.forms['google-sheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+    .catch(error => console.error('Error!', error.message))
+})
 
 //   adding auto copy function
 
@@ -113,4 +124,3 @@ function getCurrentYear() {
   }
   
   document.getElementById("footer_year").innerHTML = getCurrentYear();
-
