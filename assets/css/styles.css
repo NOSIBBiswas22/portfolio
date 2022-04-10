@@ -616,7 +616,7 @@ img {
 }
 @media screen and (max-width: 763px) {
   .scroll-up-btn.show{
-    opacity: 0;
+    display: none;
   }
   .footer__textDegain{
     text-align: left;
