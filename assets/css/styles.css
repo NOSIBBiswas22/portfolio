@@ -84,7 +84,7 @@ img {
 
 /*===== CLASS CSS ===== */
 .section {
-  padding: 3rem 0;
+  padding-bottom: 2.5rem;
 }
 .section-title {
   position: relative;
@@ -162,12 +162,15 @@ img {
   font-size: 1.5rem;
   cursor: pointer;
 }
+#menu_btn{
+  margin-top: 8px;
+  font-size: 1.6rem;
+}
 
 /*=== Show menu ===*/
 .show {
   right: 0;
 }
-
 /*Active menu*/
 .active::after {
   position: absolute;
@@ -219,6 +222,37 @@ img {
   bottom: 0;
   width: 295px;
 }
+
+
+.scroll-up-btn{
+  position: fixed;
+  height: 44px;
+  width: 41px;
+  background: #5361ff;
+  right: 30px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 45px;
+  color: #fff;
+  z-index: 9999;
+  font-size: 30px;
+  border-radius: 6px;
+  border-bottom-width: 2px;
+  cursor: pointer;
+  opacity: 0; 
+  pointer-events: none; 
+  transition: all .3S ease;
+}
+.scroll-up-btn.show{
+  bottom: 30px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.scroll-up-btn:hover{
+  filter: brightness(90%);
+  transform: scale(0.9);
+}
+
 
 /* ===== ABOUT =====*/
 .about__container {
@@ -345,10 +379,6 @@ img {
 }
 
 /* ===== CONTACT =====*/
-/* .contact__section {
-  padding-top: 3rem;
-  padding-bottom: .5rem;
-} */
 .contact__container {
   row-gap: 2rem;
 }
@@ -441,8 +471,8 @@ img {
 }
 /* ===== FOOTER=====*/
 .footer {
+  padding-top: 2rem;
   background-color: var(--dark-color);
-  margin-bottom: -21px;
 }
 .footer__container {
   row-gap: 2rem;
@@ -586,6 +616,9 @@ img {
   }
 }
 @media screen and (max-width: 763px) {
+  .scroll-up-btn.show{
+    opacity: 0;
+  }
   .footer__textDegain{
     text-align: left;
   }
