@@ -615,11 +615,13 @@ img {
   }
 }
 @media screen and (max-width: 763px) {
-  .scroll-up-btn.show{
-    display: none;
-  }
   .footer__textDegain{
     text-align: left;
+  }
+  .scroll-up-btn{
+    display: none;
+    /* height: 44px;
+    width: 41px; */
   }
 }
 @media screen and (min-width: 1024px) {
