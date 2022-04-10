@@ -11,6 +11,15 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu')
 
+
+/*===== changing the menu icon on clik =====*/
+function changeMenuBtn(){
+    const menu = document.getElementById('menu_btn');
+    menu.classList.toggle('bx-x')
+}
+
+
+
 /*===== REMOVE MENU MOBILE =====*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -41,6 +50,24 @@ function scrollActive(){
     })
 }
 
+/*===== SCROLL UP BTN FUNCTION =====*/
+$(window).scroll(function(){
+    
+    // scroll-up button show/hide script
+    if(this.scrollY > 500){
+        $('.scroll-up-btn').addClass("show");
+    }else{
+        $('.scroll-up-btn').removeClass("show");
+    }
+});
+
+// slide-up script
+$('.scroll-up-btn').click(function(){
+    $('html').animate({scrollTop: 0});
+    // removing smooth scroll on slide-up button click
+    $('html').style("scrollBehavior", "auto");
+});
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -70,16 +97,16 @@ sr.reveal('.skills__img', {delay: 400})
 sr.reveal('.portfolio__img', {interval: 200})
 
 /*SCROLL CONTACT*/
-sr.reveal('.contact__subtitle', {})
-sr.reveal('.contact__icon', {interval: 100})
-sr.reveal('.contact__text', {interval: 200})
-sr.reveal('.contact__name', {interval: 200})
+sr.reveal('.contact__subtitle', {interval:60})
+sr.reveal('.contact__icon', {interval: 100}, {delay:50})
+sr.reveal('.contact__text', {interval: 100})
+sr.reveal('.contact__name', {interval: 100})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
 // typing text animation script
 var typed = new Typed(".typing", {
-    strings: ["Full Stack Web Developer.", "Freelancer.", " Graphics Designer."],
+    strings: ["Full Stack Web Developer.", " UI/UX Designer.",  " Graphics Designer.", "Freelancer."],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
