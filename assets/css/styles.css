@@ -84,7 +84,7 @@ img {
 
 /*===== CLASS CSS ===== */
 .section {
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 0;
 }
 .section-title {
   position: relative;
@@ -471,7 +471,6 @@ img {
 }
 /* ===== FOOTER=====*/
 .footer {
-  padding-top: 2rem;
   background-color: var(--dark-color);
 }
 .footer__container {
