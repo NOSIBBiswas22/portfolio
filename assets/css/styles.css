@@ -636,7 +636,6 @@ img {
   }
   .home__img {
     width: 375px;
-    left: -10%;
-    height: 421px;
+    right: 17%;
   }
 }
