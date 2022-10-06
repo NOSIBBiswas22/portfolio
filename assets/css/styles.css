@@ -557,7 +557,6 @@ img {
   .home__img {
     width: 524px;
     right: 10%;
-    left: 51%;
   }
   .about__container {
     grid-template-columns: repeat(2, 1fr);
