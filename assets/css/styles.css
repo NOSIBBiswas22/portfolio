@@ -635,7 +635,8 @@ img {
       height: 640px;
   }
   .home__img {
-      width: 500px;
-      right: 24%;
+    width: 375px;
+    right: -10%;
+    height: 421px;
   }
 }
