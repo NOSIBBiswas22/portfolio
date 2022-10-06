@@ -220,7 +220,7 @@ img {
   position: absolute;
   right: 0%;
   bottom: 0;
-  width: 295px;
+  width: 320px;
 }
 
 
@@ -555,8 +555,8 @@ img {
     row-gap: 0;
   }
   .home__img {
-    width: 524px;
-    right: 10%;
+    width: 510px;
+    right: 21%;
   }
   .about__container {
     grid-template-columns: repeat(2, 1fr);
@@ -633,9 +633,5 @@ img {
 @media screen and (min-height: 721px) {
   .home__container {
       height: 640px;
-  }
-  .home__img {
-    width: 375px;
-    right: 17%;
   }
 }
